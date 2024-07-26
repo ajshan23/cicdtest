@@ -11,7 +11,9 @@ app.get("/", (req, res) => {
 app.get("/ajmal",(req,res)=>{
     res.send("Hi from ajmal")
 })
-
+app.get("/health",(req,res)=>{
+    res.send("<div>health is okay</div>")
+})
 app.listen(PORT,()=>{
     console.log(`listening on port ${PORT} `);
 })
